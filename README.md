@@ -1,37 +1,53 @@
-# Intro to programming game
+# Game Project Part 7 - Side-Scrolling Adventure Game
 
-A simple platforming game created using HTML, CSS, and JavaScript. This project features basic mechanics like jumping, moving, and navigating through a minimalistic platform-based environment.
+A 2D side-scrolling adventure game built with p5.js featuring a flying character navigating through a mystical landscape.
 
 ## Features
 
-- **Character Movement**: Use arrow keys or WASD to move the character.
-- **Jumping Mechanic**: Navigate platforms by jumping.
-- **Basic Collision Detection**: Prevents the character from falling through platforms.
-- **Simple Level Design**: Static platforms to traverse.
-- **Game Over Detection**: Alerts players when they fall off the platforms.
+### Gameplay
+- **Side-scrolling movement** with camera following the player
+- **Flying character** with jetpack-style propulsion
+- **Collectible items** (golden keys) that increase your score
+- **Canyon obstacles** that cause the player to fall
+- **Lives system** (3 lives total)
+- **Level completion** when reaching the flagpole with all items collected
 
-## Installation
+### Game Elements
+- **Mountains** with snow-capped peaks
+- **Trees** scattered throughout the landscape
+- **Stars** in the night sky
+- **Canyons** to avoid falling into
+- **Flagpole** marking the end goal
+- **Collectible keys** worth 25 points each
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/333Rayyan/Intro-to-programming-game.git
-   ```
-2. Open `index.html` in any modern web browser to start playing.
+### Character States
+- Standing still (facing forward)
+- Walking left/right
+- Jumping/flying with flame effects
+- Falling animation
+- Different eye colors based on direction
 
-No additional dependencies are required.
+## Controls
 
-## Usage
+- **A** - Move left
+- **D** - Move right  
+- **W** - Jump/Fly (jetpack propulsion)
 
-1. Launch the game by opening `index.html` in a browser.
-2. Control the character:
-   - **Move**: Use the arrow keys or WASD.
-   - **Jump**: Press the spacebar.
-3. Navigate the platforms and avoid falling off the screen.
+## Game Mechanics
 
-## Technologies Used
+### Scoring
+- Collect all 4 golden keys (25 points each)
+- Maximum score: 100 points
+- Score required to complete level: 100 points
 
-- **HTML5**: For the structure of the game.
-- **CSS3**: For basic styling and layout.
-- **JavaScript**: For game mechanics and interactivity.
+### Lives System
+- Start with 3 lives
+- Lose a life when falling into canyons
+- Game over when all lives are lost
+- Character respawns at starting position after losing a life
 
+### World Boundaries
+- Left boundary prevents moving too far left
+- Right boundary prevents moving beyond the game world
 
+## File Structure
